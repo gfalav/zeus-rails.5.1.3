@@ -6,36 +6,36 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-       
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">At Clientes</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Ciclo Comercial</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Serv Técnico</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>      
-    </ul>
     <% if (user_signed_in?) %>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+         
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">At Clientes</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Ciclo Comercial</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Serv Técnico</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>      
+      </ul>
       <a class="nav-link" href="#">User: <%= current_user.email %></a>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
     <% end %>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
